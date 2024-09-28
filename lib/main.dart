@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:gexpense/screens/all_category_screen.dart';
 import 'package:gexpense/screens/settings_screens.dart';
+import 'package:gexpense/screens/updated_details_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SettingsScreens(),
+      debugShowCheckedModeBanner: false,
+      home: UpdatedDetailsScreen(),
     );
   }
 }
